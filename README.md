@@ -1,7 +1,8 @@
 # trombi-MC-AC
 
+## Context
 
-It sounds like a diagram MCAC haha 
+Our mission is to create an interactive map of the 'Hauts-de-France' and 'Île-de-France' regions. We should be able to locate our fellow students on it, along with some information about them
 
 ### Stacks
 
