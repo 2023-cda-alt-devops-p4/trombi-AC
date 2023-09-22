@@ -1,0 +1,106 @@
+.orangeA {
+	--orange-a2: hsla(22, 100%, 51%, 0.044);
+	--orange-a3: hsla(34, 100%, 50.1%, 0.165);
+	--orange-a5: hsla(31, 100%, 50%, 0.357);
+	--orange-a6: hsla(27, 100%, 50.1%, 0.432);
+	--orange-a9: hsla(24, 99.9%, 48.4%, 0.969);
+	--orange-a11: #7b2100c5;
+	--orange-a12: hsla(16, 99.4%, 13.1%, 0.887);
+}
+
+/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
+/*! -- Icone --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
+
+#whoIsIt {
+	z-index: 4;
+	font-size: 20px;
+	color: hsla(24, 99.9%, 48.4%, 0.969);
+	padding: 8px 16px;
+	border: none;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	background-color: #ffffff00;
+	font-weight: 700;
+}
+
+#whoIsIt:hover {
+	cursor: pointer;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid hsla(16, 99.8%, 24.2%, 0.773);
+}
+
+/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
+/*! -- MAP --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
+
+.land {
+	fill: #81c486;
+	fill-opacity: 1;
+	stroke: white;
+	stroke-opacity: 1;
+	stroke-width: 0.5;
+}
+
+/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
+/*! -- MODAL --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
+
+.modal {
+	visibility: hidden;
+	display: none;
+	position: relative;
+}
+
+.modalHidden {
+	visibility: visible;
+	z-index: 6;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	background-color: rgba(0, 0, 0, 0.587);
+	display: flex;
+	align-items: center;
+}
+
+.cadreFormHidden {
+	border: 1px solid rgb(6, 0, 0, 0.8);
+	border-radius: 30px;
+	width: 40vw;
+	height: 70vh;
+	background-color: rgb(255, 255, 255);
+	position: relative;
+	left: 20vw;
+}
+
+.cadreForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 2px solid #81c486;
+}
+
+.cadreForm p {
+	/* font-family:  */
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.cadreForm #echap {
+	padding: 8px 16px;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	background-color: #f13838;
+	font-weight: 700;
+}
+
+#echap:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(6, 0, 0, 0.8);
+}
