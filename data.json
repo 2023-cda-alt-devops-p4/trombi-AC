@@ -8,7 +8,7 @@
             "tech_stack": ["React", "stack2"],
             "business_stack": ["SQL", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/audrey3010/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/AudreyAAOO"
         },
         {
             "nom": "Beauvois",
@@ -18,17 +18,17 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": "Cobol",
             "linkedIn": "https://www.linkedin.com/in/marine-beauvois/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/mbeauvois"
         },
         {
-            "nom": "Ph",
+            "nom": "Phounphonh",
             "prenom": "Ludovic",
             "ville": "Templemars",
             "departement": "Nord",
             "tech_stack": ["React", "Java"],
             "business_stack": ["React", "Symfony"],
             "linkedIn": "https://www.linkedin.com/in/092155113",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/Ludoph"
         },
         {
             "nom": "Lafrance",
@@ -38,7 +38,7 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/camille-m-lafrance/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/CamilleLafrance/"
         },
         {
             "nom": "Deflandre",
@@ -48,17 +48,17 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/nassim-d-aaa48a204/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/NassJs"
         },
         {
-            "nom": "Carpentier",
+            "nom": "Pierson",
             "prenom": "Theo",
             "ville": "Lestrem",
             "departement": "Nord",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
-            "gitHub": "test.com/test"
+            "linkedIn": "https://www.linkedin.com/in/theo-pierson-5bab87216/",
+            "gitHub": "https://github.com/TheoPIERSON"
         },
         {
             "nom": "Fraisse",
@@ -68,7 +68,7 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/pierre-fraisse-83b4b5253/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/PierreFrs"
         },
         {
             "nom": "Laskari",
@@ -78,7 +78,7 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/zakaria-laskari/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/zakkios"
         },
         {
             "nom": "Garciaco",
@@ -88,7 +88,7 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"], 
             "linkedIn": "https://www.linkedin.com/in/diego-garciaco",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/dgo-gco"
         },
         {
             "nom": "El Azzati",
@@ -98,7 +98,7 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/yassine-el-azzati-7b5a331b8/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/YassineElazzati"
         },
         {
             "nom": "Moreschi",
@@ -108,7 +108,7 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/jomoreschi/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/Eromnoj"
         },
         {
             "nom": "Mortelette",
@@ -118,7 +118,7 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/thomas-mortelette-845318190/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/DKHexDev"
         },
         {
             "nom": "Foucher",
@@ -128,7 +128,7 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/alexandre-foucher-0050571a4/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/AlexTakoDev"
         },
         {
             "nom": "Herbez",
@@ -138,7 +138,7 @@
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "linkedIn": "https://www.linkedin.com/in/nicolas-herbez-hdf/",
-            "gitHub": "test.com/test"
+            "gitHub": "https://github.com/nicolas-herbez"
         },
         {
             "nom": "Marcq",
@@ -147,7 +147,7 @@
             "departement": "Nord",
             "tech_stack": ["Java", "Angular"],
             "linkedIn": "https://www.linkedin.com/in/cyril-marcq-2b8453121/",
-            "gitHub": "github.com/test"
+            "gitHub": "https://gitlab.com"
         },
         {
             "nom": "Chauvin",
@@ -157,7 +157,7 @@
             "tech_stack": ["Java", "Angular"],
             "business_stack": ["Quarkus", "VueJs"],
             "linkedIn": "https://www.linkedin.com/in/melanie-cn/",
-            "gitHub": "github.com/melcn"
+            "gitHub": "https://github.com/melcn"
         }
 
     ]
