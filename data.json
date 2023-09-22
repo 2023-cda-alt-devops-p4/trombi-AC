@@ -1,0 +1,18 @@
+{
+    "camarades": [
+        {
+            "nom": "test",
+            "prenom": "Prénom1",
+            "age": 25,
+            "ville": "email1@example.com",
+            "region": "Nord",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "Hobbies": {
+                "global": ["hobby1", "hobby2"],
+                "sport": ["sport1", "sport2"],
+                "cuisine": ["plat1", "plat2"]
+            }
+        }
+    ]
+}
