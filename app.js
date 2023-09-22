@@ -1,3 +1,5 @@
+
+
 try {
   // écouteur de fin de chargement de page DOMContentLoaded
   // pour avoir la certitude que tous les éléments du DOM
