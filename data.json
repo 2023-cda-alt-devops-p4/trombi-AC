@@ -1,18 +1,181 @@
 {
     "camarades": [
         {
-            "nom": "test",
+            "nom": "Carpentier",
+            "prenom": "Audrey",
+            "ville": "Fitz-James",
+            "departement": "Oise",
+            "tech_stack": ["React", "stack2"],
+            "business_stack": ["SQL", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "B",
+            "prenom": "Marine",
+            "ville": "La Madeleine",
+            "departement": "Nord",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": "Cobol",
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Carpentier",
             "prenom": "Prénom1",
-            "age": 25,
             "ville": "email1@example.com",
             "region": "Nord",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "café": "askher",
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Ph",
+            "prenom": "Ludovic",
+            "ville": "Templemars",
+            "departement": "Nord",
+            "tech_stack": ["React", "Java"],
+            "business_stack": ["React", "Symfony"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Carpentier",
+            "prenom": "Camille",
+            "ville": "Paris",
+            "departement": "Paris",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Deflandre",
+            "prenom": "Nassim",
+            "ville": "Ronchin",
+            "departement": "Nord",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Carpentier",
+            "prenom": "Theo",
+            "age": 25,
+            "ville": "Lestrem",
+            "departement": "Nord",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
             "Hobbies": {
                 "global": ["hobby1", "hobby2"],
                 "sport": ["sport1", "sport2"],
                 "cuisine": ["plat1", "plat2"]
-            }
+            }, 
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Fraisse",
+            "prenom": "Pierre",
+            "ville": "Lille",
+            "departement": "Nord",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Carpentier",
+            "prenom": "Zakaria",
+            "ville": "Lille",
+            "departement": "Nord",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Carpentier",
+            "prenom": "Diego",
+            "ville": "Paris",
+            "departement": "Paris",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"], 
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Elz",
+            "prenom": "Yassine",
+            "ville": "Arras",
+            "departement": "Pas-de-calais",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "M",
+            "prenom": "Johnatant",
+            "ville": "Idontrememeber",
+            "departement": "Seine-et-marne",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Elz",
+            "prenom": "Thomas",
+            "ville": "Lille",
+            "departement": "Nord",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Elz",
+            "prenom": "Alexandre",
+            "ville": "Valenciennes",
+            "departement": "Nord",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
+        },
+        {
+            "nom": "Elz",
+            "prenom": "Nicolas",
+            "ville": "Arras",
+            "departement": "Pas-de-calais",
+            "tech_stack": ["stack1", "stack2"],
+            "business_stack": ["stack1", "stack2"],
+            "linkedIn": "test.com",
+            "gitHub": "test.com/test"
         }
+        {
+            "nom": "Marcq",
+            "prenom": "Cyril",
+            "ville": "Lille",
+            "departement": "Nord",
+            "tech_stack": ["Java", "Angular"],
+            "linkedIn": "test.com",
+            "gitHub": "github.com/test"
+        },
+        {
+            "nom": "Chauvin",
+            "prenom": "Melanie",
+            "ville": "Lille",
+            "departement": "Nord",
+            "tech_stack": ["Java", "Angular"],
+            "business_stack": ["Quarkus", "VueJs"],
+            "linkedIn": "test.com",
+            "gitHub": "github.com/melcn"
+        }
+
     ]
 }
