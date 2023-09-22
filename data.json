@@ -7,28 +7,17 @@
             "departement": "Oise",
             "tech_stack": ["React", "stack2"],
             "business_stack": ["SQL", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/audrey3010/",
             "gitHub": "test.com/test"
         },
         {
-            "nom": "B",
+            "nom": "Beauvois",
             "prenom": "Marine",
             "ville": "La Madeleine",
             "departement": "Nord",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": "Cobol",
-            "linkedIn": "test.com",
-            "gitHub": "test.com/test"
-        },
-        {
-            "nom": "Carpentier",
-            "prenom": "Prénom1",
-            "ville": "email1@example.com",
-            "region": "Nord",
-            "tech_stack": ["stack1", "stack2"],
-            "business_stack": ["stack1", "stack2"],
-            "café": "askher",
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/marine-beauvois/",
             "gitHub": "test.com/test"
         },
         {
@@ -38,17 +27,17 @@
             "departement": "Nord",
             "tech_stack": ["React", "Java"],
             "business_stack": ["React", "Symfony"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/092155113",
             "gitHub": "test.com/test"
         },
         {
-            "nom": "Carpentier",
+            "nom": "Lafrance",
             "prenom": "Camille",
             "ville": "Paris",
             "departement": "Paris",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/camille-m-lafrance/",
             "gitHub": "test.com/test"
         },
         {
@@ -58,22 +47,16 @@
             "departement": "Nord",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/nassim-d-aaa48a204/",
             "gitHub": "test.com/test"
         },
         {
             "nom": "Carpentier",
             "prenom": "Theo",
-            "age": 25,
             "ville": "Lestrem",
             "departement": "Nord",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "Hobbies": {
-                "global": ["hobby1", "hobby2"],
-                "sport": ["sport1", "sport2"],
-                "cuisine": ["plat1", "plat2"]
-            }, 
             "linkedIn": "test.com",
             "gitHub": "test.com/test"
         },
@@ -84,86 +67,86 @@
             "departement": "Nord",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/pierre-fraisse-83b4b5253/",
             "gitHub": "test.com/test"
         },
         {
-            "nom": "Carpentier",
+            "nom": "Laskari",
             "prenom": "Zakaria",
             "ville": "Lille",
             "departement": "Nord",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/zakaria-laskari/",
             "gitHub": "test.com/test"
         },
         {
-            "nom": "Carpentier",
+            "nom": "Garciaco",
             "prenom": "Diego",
             "ville": "Paris",
             "departement": "Paris",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"], 
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/diego-garciaco",
             "gitHub": "test.com/test"
         },
         {
-            "nom": "Elz",
+            "nom": "El Azzati",
             "prenom": "Yassine",
             "ville": "Arras",
             "departement": "Pas-de-calais",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/yassine-el-azzati-7b5a331b8/",
             "gitHub": "test.com/test"
         },
         {
-            "nom": "M",
-            "prenom": "Johnatant",
+            "nom": "Moreschi",
+            "prenom": "Johnatan",
             "ville": "Idontrememeber",
             "departement": "Seine-et-marne",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/jomoreschi/",
             "gitHub": "test.com/test"
         },
         {
-            "nom": "Elz",
+            "nom": "Mortelette",
             "prenom": "Thomas",
             "ville": "Lille",
             "departement": "Nord",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/thomas-mortelette-845318190/",
             "gitHub": "test.com/test"
         },
         {
-            "nom": "Elz",
+            "nom": "Foucher",
             "prenom": "Alexandre",
             "ville": "Valenciennes",
             "departement": "Nord",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/alexandre-foucher-0050571a4/",
             "gitHub": "test.com/test"
         },
         {
-            "nom": "Elz",
+            "nom": "Herbez",
             "prenom": "Nicolas",
             "ville": "Arras",
             "departement": "Pas-de-calais",
             "tech_stack": ["stack1", "stack2"],
             "business_stack": ["stack1", "stack2"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/nicolas-herbez-hdf/",
             "gitHub": "test.com/test"
-        }
+        },
         {
             "nom": "Marcq",
             "prenom": "Cyril",
             "ville": "Lille",
             "departement": "Nord",
             "tech_stack": ["Java", "Angular"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/cyril-marcq-2b8453121/",
             "gitHub": "github.com/test"
         },
         {
@@ -173,7 +156,7 @@
             "departement": "Nord",
             "tech_stack": ["Java", "Angular"],
             "business_stack": ["Quarkus", "VueJs"],
-            "linkedIn": "test.com",
+            "linkedIn": "https://www.linkedin.com/in/melanie-cn/",
             "gitHub": "github.com/melcn"
         }
 
