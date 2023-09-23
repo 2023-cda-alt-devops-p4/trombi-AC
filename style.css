@@ -137,24 +137,12 @@
 #echap {
 	padding: 8px 16px;
 	border-radius: 50%;
-	position: relative;
+	position: absolute;
 	top: 30px;
 	right: 30px;
 	background-color: #f13838da;
 	font-weight: 700;
 	z-index: 10;
-	cursor: pointer;
-}
-
-.echap {
-	padding: 8px 16px;
-	border-radius: 50%;
-	position: relative;
-	top: 30px;
-	right: 30px;
-	background-color: #05f621da;
-	font-weight: 700;
-	z-index: 15;
 	cursor: pointer;
 }
 
