@@ -7,12 +7,13 @@ function fetchDataForVille(ville) {
     //   return response.json(); })
 
     .then(function (result) {
+      console.log("result", result);
       // const listeCamarades = result.camarades;
       const camarades = result.camarades;
-      const villeData = camarades.find((item) => item.ville === ville);
+      const PersonsByCity = camarades.filter((item) => item.ville === ville);
       // ou .filter ?
       // Affichez les données de la ville dans la modal
-      displayVilleData(villeData);
+      displayVilleData(PersonsByCity);
 
       // //! mapper sur l'ensemble
       // const processedData = listeCamarades.map(function (item) {
@@ -66,11 +67,11 @@ function fetchDataForVille(ville) {
 }
 //! fonctionne
 // // Cette fonction affiche les données de la ville dans la modal
-// function displayVilleData(villeData) {
-//   const resultDiv = document.querySelector("#displayVilleData");
+// function displayPersonsByCity(PersonsByCity) {
+//   const resultDiv = document.querySelector("#displayPersonsByCity");
 //   resultDiv.innerHTML = ""; // Effacez le contenu précédent
 
-//   villeData.forEach(function (item) {
+//   PersonsByCity.forEach(function (item) {
 //     const ville = document.createElement("h1");
 //     ville.textContent = item.ville;
 
@@ -87,26 +88,24 @@ function fetchDataForVille(ville) {
 
 // Ajoutez une fonction pour afficher les données de la ville dans la modal
 
-function displayVilleData(villeData) {
+function displayVilleData(PersonsByCity) {
   const modalContent = document.querySelector(".modal .cadreForm");
 
   if (modalContent) {
-    // Effacez le contenu précédent de la modal
-    modalContent.innerHTML = "";
+    modalContent.innerHTML = "";// Effacez le contenu précédent de la modal
 
-    // Recherchez les données de la ville dans processedData
-    // const villeData = processedData.find((item) => item.ville === ville);
+    if (PersonsByCity) {
+      PersonsByCity.forEach(function (item) {
+        // Créez des éléments HTML pour afficher les données
+        const villeTitle = document.createElement("h1");
+        villeTitle.textContent = `${item.ville}`;
+        const nomPrenom = document.createElement("h3");
+        nomPrenom.textContent = `Nom et Prénom : ${item.prenom} ${item.nom}`;
 
-    if (villeData) {
-      // Créez des éléments HTML pour afficher les données
-      const villeTitle = document.createElement("h1");
-      villeTitle.textContent = `${villeData.ville}`;
-      const nomPrenom = document.createElement("h3");
-      nomPrenom.textContent = `Nom et Prénom : ${villeData.prenom} ${villeData.nom}`;
-
-      // Ajoutez les éléments à la modal
-      modalContent.append(villeTitle);
-      modalContent.append(nomPrenom);
+        // Ajoutez les éléments à la modal
+        modalContent.append(villeTitle);
+        modalContent.append(nomPrenom);
+      })
     }
   }
 }
