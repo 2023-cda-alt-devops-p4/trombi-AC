@@ -8,59 +8,44 @@ function fetchDataForVille(ville) {
 
     .then(function (result) {
       console.log("result", result);
-      // const listeCamarades = result.camarades;
       const camarades = result.camarades;
       const PersonsByCity = camarades.filter((item) => item.ville === ville);
       // ou .filter ? 
-      displayVilleData(PersonsByCity, ville);   
+      displayVilleData(PersonsByCity, ville);
     })
     .catch(console.error);
 }
-//! fonctionne
-// // Cette fonction affiche les données de la ville dans la modal
-// function displayPersonsByCity(PersonsByCity) {
-//   const resultDiv = document.querySelector("#displayPersonsByCity");
-//   resultDiv.innerHTML = ""; // Effacez le contenu précédent
-
-//   PersonsByCity.forEach(function (item) {
-//     const ville = document.createElement("h1");
-//     ville.textContent = item.ville;
-
-//     const nom = document.createElement("h3");
-//     nom.textContent = item.prenom + " " + item.nom;
-
-//     // Ajoutez d'autres données que vous souhaitez afficher
-
-//     resultDiv.append(ville);
-//     resultDiv.append(nom);
-//   });
-
-//! à tester
-
-// Ajoutez une fonction pour afficher les données de la ville dans la modal
 
 function displayVilleData(PersonsByCity, ville) {
   const modalContent = document.querySelector(".classDisplayData");
-  // document.querySelector(".modal .cadreForm 
   if (modalContent) {
     modalContent.textContent = "";// Effacez le contenu précédent de la modal
 
     const villeTitle = document.createElement("h1");
     villeTitle.textContent = `${ville}`;
-    // Affichez les données de la ville dans la modal
+    // Afficher 1 seule fois le nom de la ville dans la modal
     modalContent.append(villeTitle);
 
     if (PersonsByCity) {
-
       PersonsByCity.forEach(function (item) {
-        // Créez des éléments HTML pour afficher les données
-
+        // Créer des éléments HTML pour afficher les données
         const nomPrenom = document.createElement("h3");
-        nomPrenom.textContent = `Nom et Prénom : ${item.prenom} ${item.nom}`;
+        nomPrenom.textContent = `> ${item.prenom} ${item.nom}`;
 
-        // Ajoutez les éléments à la modal
+        const tech_stack = document.createElement("li");
+        tech_stack.innerHTML = `<h4>Stack : </h4> ${item.tech_stack}`;
 
-        modalContent.append(nomPrenom);
+        const business_stack = document.createElement("li");
+        business_stack.innerHTML = `<h4>Stack en entreprise : </h4> ${item.business_stack}`;
+
+        const linkedIn = document.createElement("li");
+        linkedIn.innerHTML = `<h4>LinkedIn : </h4> <a href="${item.linkedIn}" target="_blank">${item.linkedIn}</a>`;
+
+        const gitHub = document.createElement("li");
+        gitHub.innerHTML = `<h4>LinkedIn : </h4> <a href="${item.gitHub}" target="_blank">${item.gitHub}</a>`;
+
+        // Ajouter les éléments créés ds le html
+        modalContent.append(nomPrenom, tech_stack, business_stack, linkedIn, gitHub);
       })
     }
   }

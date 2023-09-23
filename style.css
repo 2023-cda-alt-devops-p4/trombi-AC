@@ -17,69 +17,80 @@
 /*! -- Affichage des résultats Json --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-#jsonDisplayResult {
+.classDisplayData {
 	border-radius: 30px;
 	margin-left: 2px;
 	max-width: 100%;
 	max-height: 95%;
 	display: flex;
 	align-items: flex-start;
+	/* justify-content: flex-start; */
 	overflow: scroll;
+	flex-direction: column;
+	border: 2px solid hsl(61, 98%, 36%);
 }
 
-#jsonDisplayResult h1 {
+#displayVilleData h1 {
+	border: 1px solid hsla(16, 95%, 49%, 0.773);
 	margin: auto;
 	font-size: 2.5rem;
 	border-bottom: 1px solid #7b2100c5;
 }
 
-#jsonDisplayResult h3 {
+#displayVilleData h3 {
+	margin: 30px 1px 5px 1px;
+	font-size: 2rem;
 	display: inline-block;
 }
 
-/* 
-#jsonDisplayResult li {
-	border: 2px solid #fbff00;
-	list-style-type: none; 
+#displayVilleData h4 {
+	font-size: 1.2rem;
+	color: #431200e2;
+	margin: 2px 10px;
 	display: inline-block;
-}*/
+}
+
+#displayVilleData li {
+	font-size: 0.8rem;
+	/* line-height: 100%; */
+	display: inline-block;
+}
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 /*! -- Icones curseur map/ville --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-.bouton {
-	border: 2px solid #04ff00;
+/* .bouton {
 	z-index: 4;
 	font-size: 20px;
 	color: hsla(24, 99.9%, 48.4%, 0.969);
 	padding: 8px 16px;
 	border: none;
 	border-radius: 50%;
-	/* position: absolute;
-	top: 20px;
-	right: 30px; */
 	background-color: #ffffff00;
 	font-weight: 700;
-}
+} */
 
-.bouton:hover {
+/* .bouton:hover {
 	cursor: pointer;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid hsla(16, 99.8%, 24.2%, 0.773);
+} */
+
+#nomVilles {
+	cursor: pointer;
+	fill-opacity: 1;
+	stroke: #ff73016e;
+	stroke-opacity: 1;
+	stroke-width: 0.3;
 }
 
-#Fitz-James {
-	position: absolute;
-	left: 48%;
-	top: 100%;
-	transform: translate(-50%, -50%);
-}
-
-#Lille {
-	position: absolute;
-	left: 48%;
-	top: 50%;
+#nomVilles:hover {
+	cursor: pointer;
+	fill-opacity: 1;
+	stroke: #431200e2;
+	stroke-opacity: 1;
+	stroke-width: 1;
 }
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
