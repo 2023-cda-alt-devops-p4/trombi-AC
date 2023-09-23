@@ -1,163 +1,162 @@
 {
-    "camarades": [
-        {
-            "nom": "Carpentier",
-            "prenom": "Audrey",
-            "ville": "Fitz-James",
-            "departement": "Oise",
-            "tech_stack": ["React", "Node"],
-            "business_stack": "SQL",
-            "linkedIn": "https://www.linkedin.com/in/audrey3010/",
-            "gitHub": "https://github.com/AudreyAAOO"
-        },
-        {
-            "nom": "Beauvois",
-            "prenom": "Marine",
-            "ville": "La Madeleine",
-            "departement": "Nord",
-            "tech_stack": ["Ruby", "RubyOnRails"],
-            "business_stack": "Cobol",
-            "linkedIn": "https://www.linkedin.com/in/marine-beauvois/",
-            "gitHub": "https://github.com/mbeauvois"
-        },
-        {
-            "nom": "Phounphonh",
-            "prenom": "Ludovic",
-            "ville": "Templemars",
-            "departement": "Nord",
-            "tech_stack": ["JavaScript", "Spring"],
-            "business_stack": ["React", "ReactJS", "Symfony"],
-            "linkedIn": "https://www.linkedin.com/in/092155113",
-            "gitHub": "https://github.com/Ludoph"
-        },
-        {
-            "nom": "Lafrance",
-            "prenom": "Camille",
-            "ville": "Paris",
-            "departement": "Paris",
-            "tech_stack": ["Angular", "React"],
-            "business_stack": ["Spring", "Swift"],
-            "linkedIn": "https://www.linkedin.com/in/camille-m-lafrance/",
-            "gitHub": "https://github.com/CamilleLafrance/"
-        },
-        {
-            "nom": "Deflandre",
-            "prenom": "Nassim",
-            "ville": "Ronchin",
-            "departement": "Nord",
-            "tech_stack": ["C#", "React"],
-            "business_stack": [".NET", "React"],
-            "linkedIn": "https://www.linkedin.com/in/nassim-d-aaa48a204/",
-            "gitHub": "https://github.com/NassJs"
-        },
-        {
-            "nom": "Pierson",
-            "prenom": "Theo",
-            "ville": "Lestrem",
-            "departement": "Nord",
-            "tech_stack": ["Java", "Swift"],
-            "business_stack": ["React"],
-            "linkedIn": "https://www.linkedin.com/in/theo-pierson-5bab87216/",
-            "gitHub": "https://github.com/TheoPIERSON"
-        },
-        {
-            "nom": "Fraisse",
-            "prenom": "Pierre",
-            "ville": "Lille",
-            "departement": "Nord",
-            "tech_stack": ["React", "Node"],
-            "business_stack": [".NET", "Angular"],
-            "linkedIn": "https://www.linkedin.com/in/pierre-fraisse-83b4b5253/",
-            "gitHub": "https://github.com/PierreFrs"
-        },
-        {
-            "nom": "Laskari",
-            "prenom": "Zakaria",
-            "ville": "Lille",
-            "departement": "Nord",
-            "tech_stack": ["stack1", "stack2"],
-            "business_stack": ["stack1", "stack2"],
-            "linkedIn": "https://www.linkedin.com/in/zakaria-laskari/",
-            "gitHub": "https://github.com/zakkios"
-        },
-        {
-            "nom": "Garciaco",
-            "prenom": "Diego",
-            "ville": "Paris",
-            "departement": "Paris",
-            "tech_stack": ["React", "Node"],
-            "business_stack": [".NET", "C#"], 
-            "linkedIn": "https://www.linkedin.com/in/diego-garciaco",
-            "gitHub": "https://github.com/dgo-gco"
-        },
-        {
-            "nom": "El Azzati",
-            "prenom": "Yassine",
-            "ville": "Arras",
-            "departement": "Pas-de-calais",
-            "tech_stack": ["stack1", "stack2"],
-            "business_stack": ["stack1", "stack2"],
-            "linkedIn": "https://www.linkedin.com/in/yassine-el-azzati-7b5a331b8/",
-            "gitHub": "https://github.com/YassineElazzati"
-        },
-        {
-            "nom": "Moreschi",
-            "prenom": "Johnatan",
-            "ville": "Idontrememeber",
-            "departement": "Seine-et-marne",
-            "tech_stack": ["stack1", "stack2"],
-            "business_stack": ["stack1", "stack2"],
-            "linkedIn": "https://www.linkedin.com/in/jomoreschi/",
-            "gitHub": "https://github.com/Eromnoj"
-        },
-        {
-            "nom": "Mortelette",
-            "prenom": "Thomas",
-            "ville": "Lille",
-            "departement": "Nord",
-            "tech_stack": ["stack1", "stack2"],
-            "business_stack": ["stack1", "stack2"],
-            "linkedIn": "https://www.linkedin.com/in/thomas-mortelette-845318190/",
-            "gitHub": "https://github.com/DKHexDev"
-        },
-        {
-            "nom": "Foucher",
-            "prenom": "Alexandre",
-            "ville": "Valenciennes",
-            "departement": "Nord",
-            "tech_stack": ["stack1", "stack2"],
-            "business_stack": ["stack1", "stack2"],
-            "linkedIn": "https://www.linkedin.com/in/alexandre-foucher-0050571a4/",
-            "gitHub": "https://github.com/AlexTakoDev"
-        },
-        {
-            "nom": "Herbez",
-            "prenom": "Nicolas",
-            "ville": "Arras",
-            "departement": "Pas-de-calais",
-            "tech_stack": ["Jquery", "Syfony"],
-            "linkedIn": "https://www.linkedin.com/in/nicolas-herbez-hdf/",
-            "gitHub": "https://github.com/nicolas-herbez"
-        },
-        {
-            "nom": "Marcq",
-            "prenom": "Cyril",
-            "ville": "Lille",
-            "departement": "Nord",
-            "tech_stack": ["Java", "Angular"],
-            "linkedIn": "https://www.linkedin.com/in/cyril-marcq-2b8453121/",
-            "gitHub": "https://gitlab.com"
-        },
-        {
-            "nom": "Chauvin",
-            "prenom": "Melanie",
-            "ville": "Lille",
-            "departement": "Nord",
-            "tech_stack": ["Java", "Angular"],
-            "business_stack": ["Quarkus", "VueJs"],
-            "linkedIn": "https://www.linkedin.com/in/melanie-cn/",
-            "gitHub": "https://github.com/melcn"
-        }
-
-    ]
+	"camarades": [
+		{
+			"nom": "Carpentier",
+			"prenom": "Audrey",
+			"ville": "Fitz-James",
+			"departement": "Oise",
+			"tech_stack": ["React", "Node"],
+			"business_stack": "SQL",
+			"linkedIn": "https://www.linkedin.com/in/audrey3010/",
+			"gitHub": "https://github.com/AudreyAAOO"
+		},
+		{
+			"nom": "Beauvois",
+			"prenom": "Marine",
+			"ville": "La Madeleine",
+			"departement": "Nord",
+			"tech_stack": ["Ruby", "RubyOnRails"],
+			"business_stack": "Cobol",
+			"linkedIn": "https://www.linkedin.com/in/marine-beauvois/",
+			"gitHub": "https://github.com/mbeauvois"
+		},
+		{
+			"nom": "Phounphonh",
+			"prenom": "Ludovic",
+			"ville": "Templemars",
+			"departement": "Nord",
+			"tech_stack": ["JavaScript", "Spring"],
+			"business_stack": ["React", "ReactJS", "Symfony"],
+			"linkedIn": "https://www.linkedin.com/in/092155113",
+			"gitHub": "https://github.com/Ludoph"
+		},
+		{
+			"nom": "Lafrance",
+			"prenom": "Camille",
+			"ville": "Paris",
+			"departement": "Paris",
+			"tech_stack": ["Angular", "React"],
+			"business_stack": ["Spring", "Swift"],
+			"linkedIn": "https://www.linkedin.com/in/camille-m-lafrance/",
+			"gitHub": "https://github.com/CamilleLafrance/"
+		},
+		{
+			"nom": "Deflandre",
+			"prenom": "Nassim",
+			"ville": "Ronchin",
+			"departement": "Nord",
+			"tech_stack": ["C#", "React"],
+			"business_stack": [".NET", "React"],
+			"linkedIn": "https://www.linkedin.com/in/nassim-d-aaa48a204/",
+			"gitHub": "https://github.com/NassJs"
+		},
+		{
+			"nom": "Pierson",
+			"prenom": "Theo",
+			"ville": "Lestrem",
+			"departement": "Nord",
+			"tech_stack": ["Java", "Swift"],
+			"business_stack": ["React"],
+			"linkedIn": "https://www.linkedin.com/in/theo-pierson-5bab87216/",
+			"gitHub": "https://github.com/TheoPIERSON"
+		},
+		{
+			"nom": "Fraisse",
+			"prenom": "Pierre",
+			"ville": "Lille",
+			"departement": "Nord",
+			"tech_stack": ["React", "Node"],
+			"business_stack": [".NET", "Angular"],
+			"linkedIn": "https://www.linkedin.com/in/pierre-fraisse-83b4b5253/",
+			"gitHub": "https://github.com/PierreFrs"
+		},
+		{
+			"nom": "Laskari",
+			"prenom": "Zakaria",
+			"ville": "Lille",
+			"departement": "Nord",
+			"tech_stack": ["stack1", "stack2"],
+			"business_stack": ["stack1", "stack2"],
+			"linkedIn": "https://www.linkedin.com/in/zakaria-laskari/",
+			"gitHub": "https://github.com/zakkios"
+		},
+		{
+			"nom": "Garciaco",
+			"prenom": "Diego",
+			"ville": "Paris",
+			"departement": "Paris",
+			"tech_stack": ["React", "Node"],
+			"business_stack": [".NET", "C#"],
+			"linkedIn": "https://www.linkedin.com/in/diego-garciaco",
+			"gitHub": "https://github.com/dgo-gco"
+		},
+		{
+			"nom": "El Azzati",
+			"prenom": "Yassine",
+			"ville": "Arras",
+			"departement": "Pas-de-calais",
+			"tech_stack": ["stack1", "stack2"],
+			"business_stack": ["stack1", "stack2"],
+			"linkedIn": "https://www.linkedin.com/in/yassine-el-azzati-7b5a331b8/",
+			"gitHub": "https://github.com/YassineElazzati"
+		},
+		{
+			"nom": "Moreschi",
+			"prenom": "Johnatan",
+			"ville": "Seine-et-marne",
+			"departement": "Seine-et-marne",
+			"tech_stack": ["stack1", "stack2"],
+			"business_stack": ["stack1", "stack2"],
+			"linkedIn": "https://www.linkedin.com/in/jomoreschi/",
+			"gitHub": "https://github.com/Eromnoj"
+		},
+		{
+			"nom": "Mortelette",
+			"prenom": "Thomas",
+			"ville": "Lille",
+			"departement": "Nord",
+			"tech_stack": ["stack1", "stack2"],
+			"business_stack": ["stack1", "stack2"],
+			"linkedIn": "https://www.linkedin.com/in/thomas-mortelette-845318190/",
+			"gitHub": "https://github.com/DKHexDev"
+		},
+		{
+			"nom": "Foucher",
+			"prenom": "Alexandre",
+			"ville": "Valenciennes",
+			"departement": "Nord",
+			"tech_stack": ["stack1", "stack2"],
+			"business_stack": ["stack1", "stack2"],
+			"linkedIn": "https://www.linkedin.com/in/alexandre-foucher-0050571a4/",
+			"gitHub": "https://github.com/AlexTakoDev"
+		},
+		{
+			"nom": "Herbez",
+			"prenom": "Nicolas",
+			"ville": "Arras",
+			"departement": "Pas-de-calais",
+			"tech_stack": ["Jquery", "Syfony"],
+			"linkedIn": "https://www.linkedin.com/in/nicolas-herbez-hdf/",
+			"gitHub": "https://github.com/nicolas-herbez"
+		},
+		{
+			"nom": "Marcq",
+			"prenom": "Cyril",
+			"ville": "Lille",
+			"departement": "Nord",
+			"tech_stack": ["Java", "Angular"],
+			"linkedIn": "https://www.linkedin.com/in/cyril-marcq-2b8453121/",
+			"gitHub": "https://gitlab.com"
+		},
+		{
+			"nom": "Chauvin",
+			"prenom": "Melanie",
+			"ville": "Lille",
+			"departement": "Nord",
+			"tech_stack": ["Java", "Angular"],
+			"business_stack": ["Quarkus", "VueJs"],
+			"linkedIn": "https://www.linkedin.com/in/melanie-cn/",
+			"gitHub": "https://github.com/melcn"
+		}
+	]
 }

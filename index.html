@@ -111,8 +111,8 @@
 							¤ Fitz-James
 						</text>
 						<text
-							x="305"
-							y="160"
+							x="310"
+							y="150"
 							z-index="2"
 							font-family="Arial"
 							font-size="12"
@@ -123,17 +123,40 @@
 					</svg>
 				</div>
 
-				<!-- Ajout des boutons -->
-				<button class="bouton" id="whoIsIt_audrey">
-					<i class="fa-solid fa-map-pin"></i>
-				</button>
-				<button class="bouton" id="whoIsIt">
-					<i class="fa-solid fa-map-pin"></i>
-				</button>
-
 				<!-- *:–☆–:*:–☆–:*:–☆–:*:–☆–:  
-				 JSON゜・。。・゜☆゜☆▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼-  
+				 Ajout des boutons par VILLE ゜・。。・゜☆゜☆▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼-  
 				-->
+
+				<button id="Lille" class="bouton" data-ville="Lille">
+					<i class="fa-solid fa-map-pin"></i>Lille
+				</button>
+				<button id="FitzJames" class="bouton" data-ville="Fitz-James">
+					<i class="fa-solid fa-map-pin"></i>Fitz-James
+				</button>
+				<button id="Paris" class="bouton" data-ville="Paris">
+					<i class="fa-solid fa-map-pin"></i>Paris
+				</button>
+				<button id="Arras" class="bouton" data-ville="Arras">
+					<i class="fa-solid fa-map-pin"></i>Arras
+				</button>
+				<button id="Valenciennes" class="bouton" data-ville="Valenciennes">
+					<i class="fa-solid fa-map-pin"></i>Valenciennes
+				</button>
+				<button id="SeineMarne" class="bouton" data-ville="Seine-et-marne">
+					<i class="fa-solid fa-map-pin"></i>Seine-et-marne ?
+				</button>
+				<button id="Lestrem" class="bouton" data-ville="Lestrem">
+					<i class="fa-solid fa-map-pin"></i>Lestrem
+				</button>
+				<button id="Ronchin" class="bouton" data-ville="Ronchin">
+					<i class="fa-solid fa-map-pin"></i>Ronchin
+				</button>
+				<button id="Templemars" class="bouton" data-ville="Templemars">
+					<i class="fa-solid fa-map-pin"></i>Templemars
+				</button>
+				<button id="LaMadeleine" class="bouton" data-ville="La Madeleine">
+					<i class="fa-solid fa-map-pin"></i>La Madeleine
+				</button>
 
 				<!-- *:–☆–:*:–☆–:*:–☆–:*:–☆–:  
 				 MODAL゜・。。・゜☆゜☆▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼-  
@@ -141,8 +164,9 @@
 
 				<div class="modal">
 					<div class="cadreForm">
-						<span id="echap">X</span>
-						<div id="jsonDisplayResult"></div>
+						<span id="echap" class="echap">Xxxxxxxxxxxxxxxxxxxxxx</span>
+						<!-- <div id="jsonDisplayResult"></div> -->
+						<div id="displayVilleData"></div>
 						<!-- <h3>Age</h3>
 						<h3>Mes stacks</h3>
 						<h3>Mes hobbies</h3>

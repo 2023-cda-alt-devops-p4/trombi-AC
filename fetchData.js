@@ -1,52 +1,112 @@
 //! récup json
+function fetchDataForVille(ville) {
+  fetch("data.json")
+    // .then(response => response.json())
+    .then((response) => response.json())
+    // .then(function (response) {
+    //   return response.json(); })
 
-fetch("data.json")
-  .then(response => response.json())
-  // .then(function (response) {
-  //   return response.json(); })
+    .then(function (result) {
+      // const listeCamarades = result.camarades;
+      const camarades = result.camarades;
+      const villeData = camarades.find((item) => item.ville === ville);
+      // ou .filter ?
+      // Affichez les données de la ville dans la modal
+      displayVilleData(villeData);
 
-  .then(function (result) {
-    const listeCamarades = result.camarades;
-    //! mapper sur l'ensemble
-    const processedData = listeCamarades.map(function (item) {
-      console.log("item + ... : " + item.nom, item.tech_stack);
+      // //! mapper sur l'ensemble
+      // const processedData = listeCamarades.map(function (item) {
+      //   console.log("item + ... : " + item.nom, item.tech_stack);
 
-      const newItem = {
-        nom: item.nom,
-        prenom: item.prenom,
-        ville: item.ville
-      };
-      return newItem;
-    });
-    
-    // Obtenir la div où on veut afficher les données
-    const resultDiv = document.querySelector("#jsonDisplayResult");
+      //   const newItem = {
+      //     nom: item.nom,
+      //     prenom: item.prenom,
+      //     ville: item.ville
+      //   };
+      //   return newItem;
+      // });
 
-    // Créer un élément HTML (par ex, une liste non ordonnée)
-    const liste = document.createElement("ul");
+      // // Obtenir la div où on veut afficher les données
+      // const resultDiv = document.querySelector("#jsonDisplayResult");
+      // const resultTestLille = document.querySelector("#LilleDisplayBtn");
+      // const liste = document.createElement("ul");
+      // const testLille = document.createElement("button");
+      // // Parcourir les données traitées et créez un élément pour chaque donnée
+      // processedData.forEach(function (item) {
 
-    // Parcourir les données traitées et créez un élément pour chaque donnée
-    processedData.forEach(function (item) {
-      console.log("foreach", item);
-      const ville = document.createElement("h1");
-      const noms = document.createElement("h3");
-      // li.textContent = "Nom: " + item.nom;
-      // ville.innerHTML = "<h2>" + item.ville + "</h2>";
-      ville.innerHTML = "<h1>" + item.ville + "</h1>";
-      noms.innerHTML = "<h3>" + item.prenom + " " + item.nom + "</h3>";
-      liste.append(ville, noms);
-    });
+      //   if (item.ville == Lille) {
 
-    // Ajoutez la liste à la div d'affichage
-    resultDiv.append(liste);
+      //     const ville2 = document.createElement("h1");
+      //     ville2.innerHTML = '<i class="fa-solid fa-map-pin">qui habite</i>'
+      //     testLille.append(ville2);
 
-  })
-  .catch(console.error);
+      //   }
 
-//!
-// const jsonVille = listeCamarades.ville
-// console.log(jsonVille);
-// let jsonDisplay = document.getElementById("jsonDisplay");
-// jsonDisplay.textContent = JSON.stringify(jsonCamarades, null, 2); // Convertit l'objet JSON en une chaîne formatée
-// const mapperVille = jsonVille.map((item_ville) => {
-//   console.log(item_ville);
+      //   console.log("foreach", item);
+      // Créer un élément HTML (par ex, une liste non ordonnée)
+
+      //   const ville = document.createElement("h1");
+      //   const noms = document.createElement("h3");
+      //   // li.textContent = "Nom: " + item.nom;
+      //   // ville.innerHTML = "<h2>" + item.ville + "</h2>";
+      //   ville.innerHTML = "<h1>" + item.ville + "</h1>";
+      //   noms.innerHTML = "<h3>" + item.prenom + " " + item.nom + "</h3>";
+      //   liste.append(ville, noms);
+      // });
+
+      // // Ajoutez la liste à la div d'affichage
+      // resultDiv.append(liste);
+      // // Ajoutez la liste à la div d'affichage
+      // resultTestLille.append(testLille);
+
+    })
+
+    .catch(console.error);
+
+}
+//! fonctionne
+// // Cette fonction affiche les données de la ville dans la modal
+// function displayVilleData(villeData) {
+//   const resultDiv = document.querySelector("#displayVilleData");
+//   resultDiv.innerHTML = ""; // Effacez le contenu précédent
+
+//   villeData.forEach(function (item) {
+//     const ville = document.createElement("h1");
+//     ville.textContent = item.ville;
+
+//     const nom = document.createElement("h3");
+//     nom.textContent = item.prenom + " " + item.nom;
+
+//     // Ajoutez d'autres données que vous souhaitez afficher
+
+//     resultDiv.append(ville);
+//     resultDiv.append(nom);
+//   });
+
+//! à tester
+
+// Ajoutez une fonction pour afficher les données de la ville dans la modal
+
+function displayVilleData(villeData) {
+  const modalContent = document.querySelector(".modal .cadreForm");
+
+  if (modalContent) {
+    // Effacez le contenu précédent de la modal
+    modalContent.innerHTML = "";
+
+    // Recherchez les données de la ville dans processedData
+    // const villeData = processedData.find((item) => item.ville === ville);
+
+    if (villeData) {
+      // Créez des éléments HTML pour afficher les données
+      const villeTitle = document.createElement("h1");
+      villeTitle.textContent = `${villeData.ville}`;
+      const nomPrenom = document.createElement("h3");
+      nomPrenom.textContent = `Nom et Prénom : ${villeData.prenom} ${villeData.nom}`;
+
+      // Ajoutez les éléments à la modal
+      modalContent.append(villeTitle);
+      modalContent.append(nomPrenom);
+    }
+  }
+}

@@ -45,10 +45,10 @@
 }*/
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-/*! -- Icone --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/*! -- Icones curseur map/ville --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-#whoIsIt {
+.bouton {
 	border: 2px solid #04ff00;
 	z-index: 4;
 	font-size: 20px;
@@ -56,32 +56,30 @@
 	padding: 8px 16px;
 	border: none;
 	border-radius: 50%;
-	position: absolute;
+	/* position: absolute;
 	top: 20px;
-	right: 30px;
+	right: 30px; */
 	background-color: #ffffff00;
 	font-weight: 700;
 }
 
-#whoIsIt:hover {
+.bouton:hover {
 	cursor: pointer;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid hsla(16, 99.8%, 24.2%, 0.773);
 }
 
-#whoIsIt {
-	border: 2px solid #00f2ff;
-	z-index: 4;
-	font-size: 20px;
-	color: hsla(24, 99.9%, 48.4%, 0.969);
-	padding: 8px 16px;
-	border: none;
-	border-radius: 50%;
+#Fitz-James {
 	position: absolute;
-	top: 20px;
-	right: 30px;
-	background-color: #ffffff00;
-	font-weight: 700;
+	left: 48%;
+	top: 100%;
+	transform: translate(-50%, -50%);
+}
+
+#Lille {
+	position: absolute;
+	left: 48%;
+	top: 50%;
 }
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
@@ -136,15 +134,28 @@
 	background-color: #fcf5f2;
 }
 
-.cadreForm #echap {
+#echap {
 	padding: 8px 16px;
 	border-radius: 50%;
-	position: absolute;
-	top: 20px;
+	position: relative;
+	top: 30px;
 	right: 30px;
 	background-color: #f13838da;
 	font-weight: 700;
-	z-index: 7;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.echap {
+	padding: 8px 16px;
+	border-radius: 50%;
+	position: relative;
+	top: 30px;
+	right: 30px;
+	background-color: #05f621da;
+	font-weight: 700;
+	z-index: 15;
+	cursor: pointer;
 }
 
 #echap:hover {
