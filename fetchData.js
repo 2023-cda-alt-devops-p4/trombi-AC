@@ -1,54 +1,52 @@
 //! récup json
 
 fetch("data.json")
-  .then(function (response) {
-    // Vérifiez si la réponse est OK (statut 200)
-    if (!response.ok) {
-      throw new Error("Erreur lors de la récupération du fichier JSON");
-    }
-    // Parsez la réponse JSON
-    return response.json();
-  })
-  .then(function (jsonData) {
-    // Vous pouvez maintenant utiliser les données JSON (par exemple, affichage dans la console)
-    let jsonCamarades = jsonData.camarades;
-    console.log(jsonData.camarades);
-    // Vous pouvez maintenant utiliser les données JSON (par exemple, affichage dans la div)
-    let jsonDisplay = document.getElementById("jsonDisplay");
-    // jsonDisplay.textContent = JSON.stringify(jsonCamarades, null, 2); // Convertit l'objet JSON en une chaîne formatée
-    let processedData = jsonCamarades.map(function (item) {
-      // Ici, vous pouvez effectuer des opérations sur chaque élément de données (item)
-      // Par exemple, renommer une clé ou effectuer un calcul
-      let newItem = {
-        nom: item.nom, // Renomme la clé "nom" en "name"
+  .then(response => response.json())
+  // .then(function (response) {
+  //   return response.json(); })
 
+  .then(function (result) {
+    const listeCamarades = result.camarades;
+    //! mapper sur l'ensemble
+    const processedData = listeCamarades.map(function (item) {
+      console.log("item + ... : " + item.nom, item.tech_stack);
+
+      const newItem = {
+        nom: item.nom,
+        prenom: item.prenom,
+        ville: item.ville
       };
       return newItem;
     });
+    
+    // Obtenir la div où on veut afficher les données
+    const resultDiv = document.querySelector("#jsonDisplayResult");
 
-    // Obtenez la div où vous souhaitez afficher les données
-    var resultDiv = document.getElementById("result");
+    // Créer un élément HTML (par ex, une liste non ordonnée)
+    const liste = document.createElement("ul");
 
-    // Créez un élément HTML (par exemple, une liste non ordonnée)
-    var ul = document.createElement("ul");
-
-    // Parcourez les données traitées et créez un élément pour chaque donnée
+    // Parcourir les données traitées et créez un élément pour chaque donnée
     processedData.forEach(function (item) {
-      var li = document.createElement("li");
-      li.textContent = "Name: " + item.nom;
-      ul.appendChild(li);
+      console.log("foreach", item);
+      const ville = document.createElement("h1");
+      const noms = document.createElement("h3");
+      // li.textContent = "Nom: " + item.nom;
+      // ville.innerHTML = "<h2>" + item.ville + "</h2>";
+      ville.innerHTML = "<h1>" + item.ville + "</h1>";
+      noms.innerHTML = "<h3>" + item.prenom + " " + item.nom + "</h3>";
+      liste.append(ville, noms);
     });
 
     // Ajoutez la liste à la div d'affichage
-    resultDiv.appendChild(ul);
-
-
+    resultDiv.append(liste);
 
   })
-  .catch(function (error) {
-    // Gérez les erreurs ici, par exemple, affichage dans la console
-    console.error(error);
-  });
-
+  .catch(console.error);
 
 //!
+// const jsonVille = listeCamarades.ville
+// console.log(jsonVille);
+// let jsonDisplay = document.getElementById("jsonDisplay");
+// jsonDisplay.textContent = JSON.stringify(jsonCamarades, null, 2); // Convertit l'objet JSON en une chaîne formatée
+// const mapperVille = jsonVille.map((item_ville) => {
+//   console.log(item_ville);

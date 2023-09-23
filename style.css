@@ -1,27 +1,55 @@
 .orangeA {
-	--orange-a2: hsla(22, 100%, 51%, 0.044);
+	--orange-a2: #ff61050b;
 	--orange-a3: hsla(34, 100%, 50.1%, 0.165);
 	--orange-a5: hsla(31, 100%, 50%, 0.357);
-	--orange-a6: hsla(27, 100%, 50.1%, 0.432);
+	--orange-a6: #ff73016e;
 	--orange-a9: hsla(24, 99.9%, 48.4%, 0.969);
 	--orange-a11: #7b2100c5;
-	--orange-a12: hsla(16, 99.4%, 13.1%, 0.887);
+	--orange-a12: #431200e2;
+}
+
+* {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
 }
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-/*! -- Json --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/*! -- Affichage des résultats Json --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-#jsonDisplay {
-	background-color: #9612128e;
-	border: 3px solid hsla(16, 99.8%, 24.2%, 0.773);
+#jsonDisplayResult {
+	border-radius: 30px;
+	margin-left: 2px;
+	max-width: 100%;
+	max-height: 95%;
+	display: flex;
+	align-items: flex-start;
+	overflow: scroll;
 }
+
+#jsonDisplayResult h1 {
+	margin: auto;
+	font-size: 2.5rem;
+	border-bottom: 1px solid #7b2100c5;
+}
+
+#jsonDisplayResult h3 {
+	display: inline-block;
+}
+
+/* 
+#jsonDisplayResult li {
+	border: 2px solid #fbff00;
+	list-style-type: none; 
+	display: inline-block;
+}*/
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 /*! -- Icone --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
 #whoIsIt {
+	border: 2px solid #04ff00;
 	z-index: 4;
 	font-size: 20px;
 	color: hsla(24, 99.9%, 48.4%, 0.969);
@@ -42,6 +70,7 @@
 }
 
 #whoIsIt {
+	border: 2px solid #00f2ff;
 	z-index: 4;
 	font-size: 20px;
 	color: hsla(24, 99.9%, 48.4%, 0.969);
@@ -54,6 +83,7 @@
 	background-color: #ffffff00;
 	font-weight: 700;
 }
+
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 /*! -- MAP --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
@@ -84,15 +114,14 @@
 	position: absolute;
 	left: 0%;
 	top: 0%;
-	background-color: rgba(0, 0, 0, 0.587);
+	background-color: #ad948571;
 	display: flex;
 	align-items: center;
 }
 
 .cadreFormHidden {
-	border: 1px solid rgb(6, 0, 0, 0.8);
 	border-radius: 30px;
-	width: 40vw;
+	width: 60vw;
 	height: 70vh;
 	background-color: rgb(255, 255, 255);
 	position: relative;
@@ -103,13 +132,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: 2px solid #81c486;
-}
-
-.cadreForm p {
-	/* font-family:  */
-	font-size: 20px;
-	margin-bottom: 10px;
+	border: 2px solid #431200e2;
+	background-color: #fcf5f2;
 }
 
 .cadreForm #echap {
@@ -118,8 +142,9 @@
 	position: absolute;
 	top: 20px;
 	right: 30px;
-	background-color: #f13838;
+	background-color: #f13838da;
 	font-weight: 700;
+	z-index: 7;
 }
 
 #echap:hover {
