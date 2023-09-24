@@ -16,6 +16,8 @@ function fetchDataForVille(ville) {
     .catch(console.error);
 }
 
+
+// Rechercher par prenom dans l'input de recherche
 function searchByName() {
   const searchInput = document.getElementById("searchInput").value.trim();
   if (searchInput === "") {
@@ -28,7 +30,6 @@ function searchByName() {
     .then(function (result) {
       const camarades = result.camarades;
       const foundPersons = camarades.filter((item) => {
-        // Recherche insensible à la casse du prénom
         return item.prenom.toLowerCase() === searchInput.toLowerCase();
       });
 
