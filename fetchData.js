@@ -16,6 +16,49 @@ function fetchDataForVille(ville) {
     .catch(console.error);
 }
 
+
+// Rechercher par prenom dans l'input de recherche
+function searchByName() {
+  const searchInput = document.getElementById("searchInput").value.trim();
+  if (searchInput === "") {
+    alert("Veuillez entrer un prénom à rechercher.");
+    return;
+  }
+
+  fetch("data.json")
+    .then((response) => response.json())
+    .then(function (result) {
+      const camarades = result.camarades;
+      const foundPersons = camarades.filter((item) => {
+        return item.prenom.toLowerCase() === searchInput.toLowerCase();
+      });
+
+      const displayData = document.querySelector(".classDisplayData");
+      const retractButton = document.querySelector("button[onclick='hideDisplayData']");
+
+
+      if (foundPersons.length === 0) {
+        alert("Aucun camarade trouvé avec ce prénom.");
+        displayData.style.display = "none";
+        retractButton.style.display = "none"; 
+      } else {
+        const ville = foundPersons[0].ville; 
+        displayVilleData(foundPersons, ville);
+        displayData.style.display = "block";
+        retractButton.style.display = "block";    
+      }
+    })
+    .catch(console.error);
+}
+
+function hideDisplayData() {
+  const displayData = document.querySelector(".classDisplayData");
+  displayData.style.display = "none";
+  const retractButton = document.querySelector("button[onclick='hideDisplayData']");
+  retractButton.style.display = "none";
+}
+
+
 function displayVilleData(PersonsByCity, ville) {
   const modalContent = document.querySelector(".classDisplayData");
   if (modalContent) {
