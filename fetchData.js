@@ -68,6 +68,12 @@ function displaySearchData(foundPersons, ville) {
         const nomPrenom = document.createElement("h3");
         nomPrenom.textContent = `> ${item.prenom} ${item.nom}`;
 
+        const anniversaire = document.createElement("li");
+        anniversaire.innerHTML = `<h4>Anniversaire : </h4> ${item.anniversaire}`;
+
+        const entreprise = document.createElement("li");
+        entreprise.innerHTML = `<h4>Dans l'entreprise : </h4> ${item.entreprise}`;
+
         const tech_stack = document.createElement("li");
         tech_stack.innerHTML = `<h4>Stack : </h4> ${item.tech_stack}`;
 
@@ -80,7 +86,7 @@ function displaySearchData(foundPersons, ville) {
         const gitHub = document.createElement("li");
         gitHub.innerHTML = `<h4>LinkedIn : </h4> <a href="${item.gitHub}" target="_blank">${item.gitHub}</a>`;
 
-        modalContent.append(nomPrenom, tech_stack, business_stack, linkedIn, gitHub);
+        modalContent.append(nomPrenom, anniversaire, tech_stack, business_stack, entreprise, linkedIn, gitHub);
       })
     }
   }
