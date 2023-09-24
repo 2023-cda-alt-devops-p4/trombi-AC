@@ -1,48 +1,42 @@
 try {
-  // écouteur de fin de chargement de page DOMContentLoaded
-  // pour avoir la certitude que tous les éléments du DOM
-  // sont chargés
+  //? écouteur de fin de chargement de page DOMContentLoaded
+  //? pour avoir la certitude que tous les éléments du DOM sont chargés
   document.addEventListener("DOMContentLoaded", () => {
     console.log("Content Loaded");
 
-    function faireunefonction() {
-      console.log("fonction ok");
-    }
+    const buttons = document.querySelectorAll('#nomVilles');
+    // const buttons = document.querySelectorAll('.bouton, ');
+    const modal = document.querySelector(".modal")
+    const cadreForm = document.querySelector(".cadreForm");
 
-    // démarrage au bouton Start
-    const whoIsIt = document.querySelector('whoIsIt');
-    document.addEventListener('click', event => {
-      console.log("start ok");
-      requestAnimationFrame(faireunefonction);
-    });
+    // Ajoutez un gestionnaire d'événement à chaque bouton
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
 
-    requestAnimationFrame(faireunefonction);
+        // Obtenez le nom de la ville à partir de l'attribut "data-ville"
+        const ville = button.getAttribute('data-ville');
+        console.log("data-ville", ville);
 
-    //! Cacher/Afficher la modal 。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。
-    document.querySelector("#whoIsIt").addEventListener("click", () => {
-      console.log("test click");
+        fetchDataForVille(ville);
 
-      document.querySelector(".modal").classList.add("modalHidden");
-      document.querySelector(".cadreForm").classList.add("cadreFormHidden");
-    });
-    const btn = document.querySelector("#echap");
+        //! ouvrir la modal 。。+゜゜。。+゜゜。。+゜゜。。+゜
+        modal.classList.add("modalHidden");
+        cadreForm.classList.add("cadreFormHidden");
 
-    const btnEchap = document
-      .querySelector("#echap")
-      .addEventListener("click", () => {
-        console.log("test click X");
-        document.querySelector(".modal").classList.remove("modalHidden");
-        document
-          .querySelector(".cadreForm")
-          .classList.remove("cadreFormHidden");
       });
+    });
 
-
-
-
-
+    //! Cacher la modal 。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜
+    const echap = document.querySelector("#echap");
+    echap.addEventListener("click", () => {
+      console.log("ferme modal X");
+      document.querySelector(".modal").classList.remove("modalHidden");
+      document
+        .querySelector(".cadreForm")
+        .classList.remove("cadreFormHidden");
+    });
   });
+  // });
 } catch (error) {
   res.status(400).json(error.message);
 }
-
