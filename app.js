@@ -5,7 +5,6 @@ try {
     console.log("Content Loaded");
 
     const buttons = document.querySelectorAll('#nomVilles');
-    // const buttons = document.querySelectorAll('.bouton, ');
     const modal = document.querySelector(".modal")
     const cadreForm = document.querySelector(".cadreForm");
 
@@ -13,13 +12,14 @@ try {
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
 
-        // Obtenez le nom de la ville à partir de l'attribut "data-ville"
+        // Obtenir le nom de la ville à partir de l'attribut "data-ville"
         const ville = button.getAttribute('data-ville');
         console.log("data-ville : ", ville);
 
         fetchDataForVille(ville);
 
         //! ouvrir la modal 。。+゜゜。。+゜゜。。+゜゜。。+゜
+
         modal.classList.add("modalHidden");
         cadreForm.classList.add("cadreFormHidden");
 
@@ -27,6 +27,7 @@ try {
     });
 
     //! Cacher la modal 。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜
+
     const echap = document.querySelector("#echap");
     echap.addEventListener("click", () => {
       console.log("ferme modal X");
@@ -35,6 +36,12 @@ try {
         .querySelector(".cadreForm")
         .classList.remove("cadreFormHidden");
     });
+
+
+
+
+
+
   });
   // });
 } catch (error) {

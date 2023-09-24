@@ -13,6 +13,14 @@
 		"Lucida Sans", Arial, sans-serif;
 }
 
+/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
+/*! -- Affichage des résultats de recherche --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
+
+/* <span id="echapS" class="echapS">X</span>
+<!--  -->
+<div class="displayResultSearch" id="displayResultSearch">hhhh</div> */
+
 .displayResultSearch {
 	border-radius: 30px;
 	margin-left: 2px;
@@ -122,13 +130,15 @@
 /*! -- MODAL --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-.modal {
+.modal,
+.modalS {
 	visibility: hidden;
 	display: none;
 	position: relative;
 }
 
-.modalHidden {
+.modalHidden,
+.modalHiddenS {
 	visibility: visible;
 	z-index: 6;
 	width: 100vw;
@@ -141,7 +151,8 @@
 	align-items: center;
 }
 
-.cadreFormHidden {
+.cadreFormHidden,
+.cadreFormHiddenS {
 	border-radius: 30px;
 	width: 60vw;
 	height: 70vh;
@@ -150,7 +161,8 @@
 	left: 20vw;
 }
 
-.cadreForm {
+.cadreForm,
+.cadreFormS {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -158,7 +170,8 @@
 	background-color: #fcf5f2;
 }
 
-#echap {
+#echap,
+#echapS {
 	padding: 8px 16px;
 	border-radius: 50%;
 	position: absolute;
@@ -170,7 +183,8 @@
 	cursor: pointer;
 }
 
-#echap:hover {
+#echap:hover,
+#echapS:hover {
 	background-color: rgb(255, 255, 255);
 	border: 1px solid rgb(6, 0, 0, 0.8);
 }

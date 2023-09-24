@@ -11,7 +11,7 @@ function fetchDataForVille(ville) {
     .catch(console.error);
 }
 
-// Rechercher par prenom dans l'input de recherche
+//! Rechercher par prenom dans l'input de recherche
 function searchByName() {
   const searchInput = document.querySelector("#searchInput").value.trim();
   if (searchInput === "") {
@@ -22,6 +22,8 @@ function searchByName() {
   fetch("data.json")
     .then((response) => response.json())
     .then(function (result) {
+      const modalS = document.querySelector(".modalS")
+      const cadreFormS = document.querySelector(".cadreFormS");
       const camarades = result.camarades;
       const foundPersons = camarades.filter((item) => {
         return item.prenom.toLowerCase() === searchInput.toLowerCase();
@@ -29,22 +31,40 @@ function searchByName() {
       // displayVilleData(PersonsByCity, ville);
       // const displayData = document.querySelector(".classDisplayData");
       // const retractButton = document.querySelector("button[onclick='hideDisplayData']");
-      // 
-      console.log("foundPersons", foundPersons);
+
       if (foundPersons.length === 0) {
         alert("Aucun camarade trouvé avec ce prénom.");
         // displayData.style.display = "none";
         // retractButton.style.display = "none";
       } else {
-
         const ville = foundPersons[0].ville;
-
-        // 
         // retractButton.style.display = "block";
-        console.log("foundPersons", foundPersons);
+        console.log("foundPersons[0]", foundPersons[0]);
         console.log("ville", ville);
+
+        //! ouvrir la modal 。。+゜゜。。+゜
+        modalS.classList.add("modalHiddenS");
+        cadreFormS.classList.add("cadreFormHiddenS");
+
+        //! fonctions pour afficher les résultats 。。+゜゜。。
+
         displaySearchData(foundPersons, ville); fetchDataForVille(ville)
-        displayData.style.display = "block";
+        // displayData.style.display = "block";
+
+
+        //! Cacher la modal des résultats de recherche 。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜
+        // function hideDisplayData() {
+        const RemoveDataSearch = document.querySelector("#echapS");
+
+        RemoveDataSearch.addEventListener("click", () => {
+          console.log("ferme hideDisplayData displayResultSearch");
+          document.querySelector(".modalS").classList.remove("modalHiddenS");
+          document
+            .querySelector(".cadreFormS")
+            .classList.remove("cadreFormHiddenS");
+        });
+
+
       }
     })
     .catch(console.error);
@@ -67,7 +87,7 @@ function searchByName() {
 
 //! Afficher le Tri par prénom (barre de recherche)
 function displaySearchData(foundPersons, ville) {
-  const modalContent = document.querySelector(".displayResultSearch");
+  const modalContent = document.querySelector(".classResultSearch");
   if (modalContent) {
     modalContent.textContent = "";// Effacez le contenu précédent de la modal
 
