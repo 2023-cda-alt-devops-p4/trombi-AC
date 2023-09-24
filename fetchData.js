@@ -47,6 +47,13 @@ function searchByName() {
     .catch(console.error);
 }
 
+function hideDisplayData() {
+  const displayData = document.querySelector(".classDisplayData");
+  displayData.style.display = "none";
+  const retractButton = document.querySelector("button[onclick='hideDisplayData']");
+  retractButton.style.display = "none";
+}
+
 
 function displayVilleData(PersonsByCity, ville) {
   const modalContent = document.querySelector(".classDisplayData");
