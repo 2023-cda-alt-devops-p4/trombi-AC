@@ -34,14 +34,18 @@ function searchByName() {
       });
 
       const displayData = document.querySelector(".classDisplayData");
+      const retractButton = document.querySelector("button[onclick='hideDisplayData']");
+
 
       if (foundPersons.length === 0) {
         alert("Aucun camarade trouvé avec ce prénom.");
         displayData.style.display = "none";
+        retractButton.style.display = "none"; 
       } else {
         const ville = foundPersons[0].ville; 
         displayVilleData(foundPersons, ville);
         displayData.style.display = "block";
+        retractButton.style.display = "block";    
       }
     })
     .catch(console.error);
