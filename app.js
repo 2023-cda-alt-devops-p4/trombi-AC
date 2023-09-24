@@ -15,7 +15,7 @@ try {
 
         // Obtenez le nom de la ville à partir de l'attribut "data-ville"
         const ville = button.getAttribute('data-ville');
-        console.log("data-ville", ville);
+        console.log("data-ville : ", ville);
 
         fetchDataForVille(ville);
 

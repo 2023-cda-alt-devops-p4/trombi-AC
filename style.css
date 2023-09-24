@@ -13,6 +13,19 @@
 		"Lucida Sans", Arial, sans-serif;
 }
 
+.displayResultSearch {
+	border-radius: 30px;
+	margin-left: 2px;
+	max-width: 100%;
+	max-height: 95%;
+	display: flex;
+	align-items: flex-start;
+	/* justify-content: flex-start; */
+	overflow: scroll;
+	flex-direction: column;
+	border: 3px solid hsl(128, 96%, 44%);
+}
+
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 /*! -- Affichage des résultats Json --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
