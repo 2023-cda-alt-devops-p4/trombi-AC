@@ -1,81 +1,56 @@
-.orangeA {
-	--orange-a2: #ff61050b;
-	--orange-a3: hsla(34, 100%, 50.1%, 0.165);
-	--orange-a5: hsla(31, 100%, 50%, 0.357);
-	--orange-a6: #ff73016e;
-	--orange-a9: hsla(24, 99.9%, 48.4%, 0.969);
-	--orange-a11: #7b2100c5;
-	--orange-a12: #431200e2;
-}
-
 * {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 }
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-/*! -- Affichage des résultats Json --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/*! -- Affichage des résultats Json --★゜・。。・
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-.classDisplayData {
+.classDisplayData,
+.classResultSearch {
 	border-radius: 30px;
-	margin-left: 2px;
+	margin-left: 5px;
 	max-width: 100%;
 	max-height: 95%;
+	min-height: 70%;
 	display: flex;
 	align-items: flex-start;
-	/* justify-content: flex-start; */
 	overflow: scroll;
 	flex-direction: column;
-	border: 2px solid hsl(61, 98%, 36%);
 }
 
-#displayVilleData h1 {
-	border: 1px solid hsla(16, 95%, 49%, 0.773);
-	margin: auto;
+#displayVilleData h1,
+#displayResultSearch h1 {
+	margin: 20px;
 	font-size: 2.5rem;
 	border-bottom: 1px solid #7b2100c5;
 }
 
-#displayVilleData h3 {
+#displayVilleData h3,
+#displayResultSearch h3 {
 	margin: 30px 1px 5px 1px;
 	font-size: 2rem;
 	display: inline-block;
 }
 
-#displayVilleData h4 {
+#displayVilleData h4,
+#displayResultSearch h4 {
 	font-size: 1.2rem;
 	color: #431200e2;
 	margin: 2px 10px;
 	display: inline-block;
 }
 
-#displayVilleData li {
+#displayVilleData li,
+#displayResultSearch li {
 	font-size: 0.8rem;
-	/* line-height: 100%; */
 	display: inline-block;
 }
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-/*! -- Icones curseur map/ville --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/*! -- Icones curseur map/ville --★゜・。。・゜゜
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
-
-/* .bouton {
-	z-index: 4;
-	font-size: 20px;
-	color: hsla(24, 99.9%, 48.4%, 0.969);
-	padding: 8px 16px;
-	border: none;
-	border-radius: 50%;
-	background-color: #ffffff00;
-	font-weight: 700;
-} */
-
-/* .bouton:hover {
-	cursor: pointer;
-	background-color: rgb(255, 255, 255);
-	border: 1px solid hsla(16, 99.8%, 24.2%, 0.773);
-} */
 
 #nomVilles {
 	cursor: pointer;
@@ -94,7 +69,7 @@
 }
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-/*! -- MAP --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/*! -- MAP --★゜・。。・゜゜・。。・゜☆゜・。。・゜
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
 .land {
@@ -106,16 +81,18 @@
 }
 
 /* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-/*! -- MODAL --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+/*! -- MODAL --★゜・。。・゜゜・。。・゜☆゜・。。・
 /* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-.modal {
+.modal,
+.modalS {
 	visibility: hidden;
 	display: none;
 	position: relative;
 }
 
-.modalHidden {
+.modalHidden,
+.modalHiddenS {
 	visibility: visible;
 	z-index: 6;
 	width: 100vw;
@@ -128,7 +105,8 @@
 	align-items: center;
 }
 
-.cadreFormHidden {
+.cadreFormHidden,
+.cadreFormHiddenS {
 	border-radius: 30px;
 	width: 60vw;
 	height: 70vh;
@@ -137,7 +115,8 @@
 	left: 20vw;
 }
 
-.cadreForm {
+.cadreForm,
+.cadreFormS {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -145,7 +124,8 @@
 	background-color: #fcf5f2;
 }
 
-#echap {
+#echap,
+#echapS {
 	padding: 8px 16px;
 	border-radius: 50%;
 	position: absolute;
@@ -157,7 +137,8 @@
 	cursor: pointer;
 }
 
-#echap:hover {
+#echap:hover,
+#echapS:hover {
 	background-color: rgb(255, 255, 255);
 	border: 1px solid rgb(6, 0, 0, 0.8);
 }
