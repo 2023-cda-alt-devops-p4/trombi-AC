@@ -33,11 +33,15 @@ function searchByName() {
         return item.prenom.toLowerCase() === searchInput.toLowerCase();
       });
 
+      const displayData = document.querySelector(".classDisplayData");
+
       if (foundPersons.length === 0) {
         alert("Aucun camarade trouvé avec ce prénom.");
+        displayData.style.display = "none";
       } else {
         const ville = foundPersons[0].ville; 
         displayVilleData(foundPersons, ville);
+        displayData.style.display = "block";
       }
     })
     .catch(console.error);
