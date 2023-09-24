@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Trombi</title>
+		<title>Trombi CDA P4</title>
 
 		<link rel="stylesheet" href="style.css" />
 		<link rel="mySvg" href="mySvg.svg" />
@@ -14,32 +14,24 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>Trombi CDA P4</h1>
-
-			<input
-				type="search"
-				id="searchInput"
-				name="search"
-				placeholder="Rechercher un camarade"
-			/>
-			<button onclick="searchByName()">Rechercher...</button>
-
-			<div class="modalS">
-				<div class="cadreFormS">
-					<span id="echapS" class="echapS">X</span>
-					<!--  -->
-					<div class="classResultSearch" id="displayResultSearch"></div>
-				</div>
-			</div>
-
-			<!-- <div class="classDisplayData" id="displayVilleData"></div> -->
-			<!--  -->
-		</header>
+		<header><h1>Trombi CDA P4 - 2023-2025</h1></header>
 		<main>
 			<div class="map" id="map">
-				<h1>Qui est-ce ?</h1>
-				<p>Le trombi de nous tous</p>
+				<input
+					type="search"
+					id="searchInput"
+					name="search"
+					placeholder="Rechercher par prénom"
+				/>
+				<button onclick="searchByName()">
+					Rechercher dans le trombi de nous tous...
+				</button>
+				<div class="modalS">
+					<div class="cadreFormS">
+						<span id="echapS" class="echapS">X</span>
+						<div class="classResultSearch" id="displayResultSearch"></div>
+					</div>
+				</div>
 				<div class="map-img">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -142,51 +134,96 @@
 						>
 							¤ Paris
 						</text>
+						<text
+							x="360"
+							y="50"
+							z-index="2"
+							font-family="Arial"
+							font-size="12"
+							fill="black"
+							id="nomVilles"
+							data-ville="Valenciennes"
+						>
+							¤ &lt;---------- Valenciennes
+						</text>
+						<text
+							x="285"
+							y="42"
+							z-index="2"
+							font-family="Arial"
+							font-size="10"
+							fill="black"
+							id="nomVilles"
+							data-ville="Lestrem"
+						>
+							Lestrem ¤
+						</text>
+						<text
+							x="201"
+							y="38"
+							z-index="2"
+							font-family="Arial"
+							font-size="10"
+							fill="black"
+							id="nomVilles"
+							data-ville="La Madeleine"
+						>
+							La Madeleine ------------------&gt; ¤
+						</text>
+						<text
+							x="336"
+							y="43"
+							z-index="2"
+							font-family="Arial"
+							font-size="10"
+							fill="black"
+							id="nomVilles"
+							data-ville="Templemars"
+						>
+							¤ &lt;----- Templemars
+						</text>
+						<text
+							x="337"
+							y="41"
+							z-index="2"
+							font-family="Arial"
+							font-size="10"
+							fill="black"
+							id="nomVilles"
+							data-ville="Ronchin"
+						>
+							¤ &lt;---------------------- Ronchin
+						</text>
+						<text
+							x="336"
+							y="165"
+							z-index="2"
+							font-family="Arial"
+							font-size="12"
+							fill="black"
+							id="nomVilles"
+							data-ville="Seine-et-marne"
+						>
+							¤ Seine-et-marne
+						</text>
+						<text
+							x="235"
+							y="43"
+							z-index="2"
+							font-family="Arial"
+							font-size="10"
+							fill="black"
+							id="nomVilles"
+							data-ville="Samer"
+						>
+							Samer --&gt; ¤
+						</text>
 					</svg>
 				</div>
 
 				<!-- *:–☆–:*:–☆–:*:–☆–:*:–☆–:  
-				à effacer: ville placée dans <text> ゜・。。・゜☆゜☆▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼-  
-				-->
-				<!-- <button id="Lille" class="bouton" data-ville="Lille">
-					<i class="fa-solid fa-map-pin"></i>Lille
-				</button>
-				<button id="FitzJames" class="bouton" data-ville="Fitz-James">
-					<i class="fa-solid fa-map-pin"></i>Fitz-James
-				</button>
-				<button id="Paris" class="bouton" data-ville="Paris">
-					<i class="fa-solid fa-map-pin"></i>Paris
-				</button> -->
-				<!-- <button id="Arras" class="bouton" data-ville="Arras">
-					<i class="fa-solid fa-map-pin"></i>Arras
-				</button> -->
-
-				<!-- *:–☆–:*:–☆–:*:–☆–:*:–☆–:  
-				à placer id + data-ville + bonnes coordonnées:  Ajout des boutons par VILLE ゜・。。・゜☆゜☆▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼-  
-				-->
-				<button id="Valenciennes" class="bouton" data-ville="Valenciennes">
-					<i class="fa-solid fa-map-pin"></i>Valenciennes
-				</button>
-				<button id="SeineMarne" class="bouton" data-ville="Seine-et-marne">
-					<i class="fa-solid fa-map-pin"></i>Seine-et-marne ?
-				</button>
-				<button id="Lestrem" class="bouton" data-ville="Lestrem">
-					<i class="fa-solid fa-map-pin"></i>Lestrem
-				</button>
-				<button id="Ronchin" class="bouton" data-ville="Ronchin">
-					<i class="fa-solid fa-map-pin"></i>Ronchin
-				</button>
-				<button id="Templemars" class="bouton" data-ville="Templemars">
-					<i class="fa-solid fa-map-pin"></i>Templemars
-				</button>
-				<button id="LaMadeleine" class="bouton" data-ville="La Madeleine">
-					<i class="fa-solid fa-map-pin"></i>La Madeleine
-				</button>
-
-				<!-- *:–☆–:*:–☆–:*:–☆–:*:–☆–:  
 				 MODAL゜・。。・゜☆゜☆▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼-  
 				-->
-
 				<div class="modal">
 					<div class="cadreForm">
 						<span id="echap" class="echap">X</span>
@@ -195,6 +232,7 @@
 				</div>
 			</div>
 		</main>
+
 		<script src="app.js"></script>
 		<script src="fetchData.js"></script>
 	</body>

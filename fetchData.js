@@ -3,7 +3,6 @@ function fetchDataForVille(ville) {
   fetch("data.json")
     .then((response) => response.json())
     .then(function (result) {
-      console.log("result", result);
       const data = result.camarades;
       const PersonsByCity = data.filter((item) => item.ville === ville);
       displayVilleData(PersonsByCity, ville);
@@ -28,77 +27,44 @@ function searchByName() {
       const foundPersons = camarades.filter((item) => {
         return item.prenom.toLowerCase() === searchInput.toLowerCase();
       });
-      // displayVilleData(PersonsByCity, ville);
-      // const displayData = document.querySelector(".classDisplayData");
-      // const retractButton = document.querySelector("button[onclick='hideDisplayData']");
 
       if (foundPersons.length === 0) {
         alert("Aucun camarade trouvé avec ce prénom.");
-        // displayData.style.display = "none";
-        // retractButton.style.display = "none";
       } else {
         const ville = foundPersons[0].ville;
-        // retractButton.style.display = "block";
-        console.log("foundPersons[0]", foundPersons[0]);
-        console.log("ville", ville);
 
         //! ouvrir la modal 。。+゜゜。。+゜
         modalS.classList.add("modalHiddenS");
         cadreFormS.classList.add("cadreFormHiddenS");
 
         //! fonctions pour afficher les résultats 。。+゜゜。。
-
         displaySearchData(foundPersons, ville); fetchDataForVille(ville)
-        // displayData.style.display = "block";
 
-
-        //! Cacher la modal des résultats de recherche 。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜゜。。+゜
-        // function hideDisplayData() {
+        //! Cacher la modal des résultats de recherche 。。+゜゜。。+゜゜。。+゜゜。。
         const RemoveDataSearch = document.querySelector("#echapS");
-
         RemoveDataSearch.addEventListener("click", () => {
-          console.log("ferme hideDisplayData displayResultSearch");
           document.querySelector(".modalS").classList.remove("modalHiddenS");
           document
             .querySelector(".cadreFormS")
             .classList.remove("cadreFormHiddenS");
         });
-
-
       }
     })
     .catch(console.error);
 }
 
-// function hideDisplayData() {
-//   const RemoveDataSearch = document.querySelector("#echapS");
-//   RemoveDataSearch.addEventListener("click", () => {  
-//     console.log("ferme hideDisplayData displayResultSearch");
-//     document.querySelector("#displayResultSearch").classList.remove(".displayResultSearch");
-//   });
-
-// document.querySelector("#displayResultSearch");
-// displayData.style.display = "none";
-
-// document
-// const retractButton = document.querySelector("button[onclick='hideDisplayData']");
-// retractButton.style.display = "none";}
-
-
 //! Afficher le Tri par prénom (barre de recherche)
 function displaySearchData(foundPersons, ville) {
   const modalContent = document.querySelector(".classResultSearch");
   if (modalContent) {
-    modalContent.textContent = "";// Effacez le contenu précédent de la modal
-
+    modalContent.textContent = "";// 
     const villeTitle = document.createElement("h1");
     villeTitle.textContent = `${ville}`;
-    // Afficher 1 seule fois le nom de la ville dans la modal
     modalContent.append(villeTitle);
 
     if (foundPersons) {
       foundPersons.forEach(function (item) {
-        // Créer des éléments HTML pour afficher les données
+
         const nomPrenom = document.createElement("h3");
         nomPrenom.textContent = `> ${item.prenom} ${item.nom}`;
 
@@ -114,7 +80,6 @@ function displaySearchData(foundPersons, ville) {
         const gitHub = document.createElement("li");
         gitHub.innerHTML = `<h4>LinkedIn : </h4> <a href="${item.gitHub}" target="_blank">${item.gitHub}</a>`;
 
-        // Ajouter les éléments créés ds le html
         modalContent.append(nomPrenom, tech_stack, business_stack, linkedIn, gitHub);
       })
     }
@@ -138,6 +103,12 @@ function displayVilleData(PersonsByCity, ville) {
         const nomPrenom = document.createElement("h3");
         nomPrenom.textContent = `> ${item.prenom} ${item.nom}`;
 
+        const anniversaire = document.createElement("li");
+        anniversaire.innerHTML = `<h4>Anniversaire : </h4> ${item.anniversaire}`;
+
+        const entreprise = document.createElement("li");
+        entreprise.innerHTML = `<h4>Dans l'entreprise : </h4> ${item.entreprise}`;
+
         const tech_stack = document.createElement("li");
         tech_stack.innerHTML = `<h4>Stack : </h4> ${item.tech_stack}`;
 
@@ -151,7 +122,7 @@ function displayVilleData(PersonsByCity, ville) {
         gitHub.innerHTML = `<h4>LinkedIn : </h4> <a href="${item.gitHub}" target="_blank">${item.gitHub}</a>`;
 
         // Ajouter les éléments créés ds le html
-        modalContent.append(nomPrenom, tech_stack, business_stack, linkedIn, gitHub);
+        modalContent.append(nomPrenom, anniversaire, tech_stack, business_stack, entreprise, linkedIn, gitHub);
       })
     }
   }
