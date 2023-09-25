@@ -125,7 +125,7 @@
 			"prenom": "Johnatan",
 			"ville": "Seine-et-marne",
 			"departement": "Seine-et-marne",
-			"entreprise": "Studi",
+			"entreprise": "Gretz-Armainvilliers",
 			"anniversaire": "00/00",
 			"tech_stack": ["laravel", "flutter", "reactjs"],
 			"business_stack": ["nextjs", "stack2", "nodejs"],
