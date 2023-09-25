@@ -4,6 +4,20 @@
 
 Our mission is to create an interactive map of the 'Hauts-de-France' and 'Île-de-France' regions. We should be able to locate our fellow students on it, along with some information about them
 
+## Things to improve for version 2
+
+* Enhance the CSS for better visual presentation.
+* Optimize the placement of cities, especially those in the northern region.
+* Refactor the code to improve its structure and maintainability.
+* Implement searching by skills, by city, or by skills.
+* Add search field suggestions for an enhanced user experience.
+* Incorporate the "onclick" function to allow users to select an entry.
+* Include information about users' hobbies.
+* Improve the quality of data.
+* Add photos to personalize user profiles
+
+
+
 ### Stacks
 
 ![Html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
