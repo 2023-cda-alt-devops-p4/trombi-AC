@@ -7,11 +7,11 @@ Our mission is to create an interactive map of the 'Hauts-de-France' and 'Île-d
 ## Things to improve for version 2
 
 * Enhance the CSS for better visual presentation.
-* Optimize the placement of cities, especially those in the northern region.
-* Refactor the code to improve its structure and maintainability.
-* Implement searching by skills, by city, or by skills.
-* Add search field suggestions for an enhanced user experience.
-* Incorporate the "onclick" function to allow users to select an entry.
+* Optimize the placement of cities, especially those in the northern region
+* Refactor the code to improve its structure and maintainability
+* Implement searching by skills or by city
+* Add search field suggestions for an enhanced user experience
+* Modify the search field validation to enable hitting Enter
 * Include information about users' hobbies.
 * Improve the quality of data.
 * Add photos to personalize user profiles
